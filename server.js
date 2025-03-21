@@ -1,33 +1,3 @@
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const connectDB = require("./config/db");
-// const routes = require("./routes");
-// require("dotenv").config();
-
-// const app = express();
-// app.use(bodyParser.json());
-
-// // Connect to MongoDB
-// connectDB();
-
-// // Routes
-// app.use("/", routes);
-
-// // Start server
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-// });
-
-
-
-
-
-
-
-
-
-
 
 const express = require('express');
 const bodyParser = require('body-parser');
