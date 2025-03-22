@@ -38,11 +38,6 @@
 
 
 
-
-
-
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors'); // Add CORS for frontend-backend communication
@@ -55,14 +50,8 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 
-// Enable CORS for all routes
-app.use(
-  cors({
-    origin: 'http://localhost:5176', // Replace with your frontend URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true,
-  })
-);
+// Enable CORS for all routes (allow all origins)
+app.use(cors()); // Allow requests from any origin
 
 // Connect to MongoDB
 connectDB();
